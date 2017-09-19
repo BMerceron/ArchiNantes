@@ -16,6 +16,7 @@ h2 {
 }
 /* NAVBAR *********************************************************************/
 .nav {
+  display: none;
   z-index: 1;
   width: 100%;
   position: fixed;
@@ -88,12 +89,16 @@ h2 {
 }
 .card {
   width: 570px;
+  border: none;
 }
 /* QUIZZ SECTION **************************************************************/
 .quizz-section {
   padding-top: 15%;
   height: 100vh;
   text-align: center;
+  background-image: url(../img/quizz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .quizz-section > a {
   margin-top: 100px;
@@ -101,5 +106,5 @@ h2 {
 /* FOOTER *********************************************************************/
 footer {
   height: 200px;
-  background-color: #3d3a34;
+  background-color: #3e4c57;
 }
