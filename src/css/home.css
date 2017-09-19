@@ -1,4 +1,7 @@
 /* GLOBAL *********************************************************************/
+body {
+  overflow-x: hidden;
+}
 h1, p {
   font-weight: 900;
   margin-top: 20px;
@@ -8,13 +11,15 @@ h1 {
 }
 h2 {
   font-size: 30px;
-  text-align: center;
+  margin-bottom: 20px;
+  margin-top:20px;
 }
 /* NAVBAR *********************************************************************/
 .nav {
+  z-index: 1;
   width: 100%;
   position: fixed;
-  background-color: #3d3a34;
+  background-color: #3e4c57;
 }
 .nav > a.active {
   color: white;
@@ -26,19 +31,25 @@ h2 {
 .home-section {
   height: 100vh;
   /*background-image: url(../img/);*/
-  background-image: url(http://tmslesite.free.fr/Nantes/NantesCathedraleAncienOriginal.jpg);
+  background-image: url(../img/place_graslin.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  text-align: center;
-  padding-top: 300px;
+  padding-top: 35%;
 }
 .home-section > img {
   height: 150px;
   width: 180px;
 }
-.home-section > h1,p {
+.title {
+  padding-top: 15px;
+  background-color:#3e4c57;
   color: white;
+  text-align: center;
+  padding-bottom: 15px;
+}
+.title > h1 {
+  text-transform: uppercase;
 }
 /* MAP SECTION ****************************************************************/
 .map-section {
@@ -53,8 +64,10 @@ h2 {
   background-position: 0% 116%;
 }
 .history-img-small {
-  height: 100px;
-  width: 150px;
+  margin-left: 25px;
+  margin-top: 25px;
+  height: 200px;
+  width: 260px;
 }
 .actu-img-small {
 
@@ -65,14 +78,25 @@ h2 {
 }
 /* GALERY SECTION *************************************************************/
 .galery-section {
-  height: 100vh;
+  height: auto;
+  padding-top: 100px
+  padding-right: 50px;
+  padding-left: 50px;
 }
-.card-body > img {
-  height: 200px;
+.card-text {
+  color: black;
+}
+.card {
+  width: 570px;
 }
 /* QUIZZ SECTION **************************************************************/
 .quizz-section {
+  padding-top: 15%;
   height: 100vh;
+  text-align: center;
+}
+.quizz-section > a {
+  margin-top: 100px;
 }
 /* FOOTER *********************************************************************/
 footer {
