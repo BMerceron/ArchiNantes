@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+	<link rel="icon" href="favicon.ico" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -17,6 +18,73 @@
   <div class="question-section"></div>
   <div class="answer-section"></div>
   <div class="number-question"></div>
+
+<form name="forme" id="form">
+	<table id="table" table cellpadding="25">
+		<tr>
+			<td>
+				<img id="q1" src="src/img/logo_archinantes.png"/>
+			</td></br>
+			<td>
+				<input class="q1" type="radio" name="q1" value="q1_1"> Reponse 1</br>
+				<input class="q1" type="radio" name="q1" value="q1_2"> Reponse 2</br>
+				<input class="q1" type="radio" name="q1" value="q1_3"> Reponse 3</br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="q2" src="src/img/logo_archinantes.png"/>
+			</td></br>
+			<td>
+				<input class="q2" type="radio" name="q2" value="q2_1"> Reponse 1</br>
+				<input class="q2" type="radio" name="q2" value="q2_2"> Reponse 2</br>
+				<input class="q2" type="radio" name="q2" value="q2_3"> Reponse 3</br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<img id="q3" src="src/img/logo_archinantes.png"/>
+			</td></br>
+			<td>
+				<input class="q3" type="radio" name="q3" value="q3_1"> Reponse 1</br>
+				<input class="q3" type="radio" name="q3" value="q3_2"> Reponse 2</br>
+				<input class="q3" type="radio" name="q3" value="q3_3"> Reponse 3</br>
+			</td>
+		</tr>
+		
+	</table>
+	<script>
+var q1=document.forme.q1[0]
+var q2=document.forme.q2[1]
+var q3=document.forme.q3[2]
+
+function total(){
+if ((q1.checked==true)&&(q2.checked==true)&&
+(q3.checked==true))
+{
+alert("Nice !");
+alert("Tu connais bien Nantes !!!"); 
+}
+if ((q1.checked!=true)||(q2.checked!=true)||
+(q3.checked!=true)) {
+alert("Encore quelques petites erreurs !!!")
+}
+a=(q1.checked==true)?1:0
+b=(q2.checked==true)?1:0
+c=(q3.checked==true)?1:0
+
+var compte=(a+b+c) //total des réponses
+if (compte>1) {
+alert(compte + " bonnes réponses sur 3 !")
+}
+else {
+alert(compte + " bonne réponse seulement sur 3 !");
+}
+}
+</script>
+<input type="button" class="button" value="Valider" onclick="javascript:total()">
+</form>
+
   <footer></footer>
 </body>
 <!-- bootstrap -->
