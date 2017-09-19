@@ -2,31 +2,93 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap -->
+    <!-- favicon -->
+    <!-- <link rel="icon" href="favicon.ico" /> -->
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- fancybox -->
-    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="src/css/home.css">
     <!-- fonts -->
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <title>ArchiNantes</title>
 </head>
 <body>
-  <nav></nav>
-  <div class="home-section"></div>
-  <div class="map-section"></div>
-  <div class="galery-section"></div>
-  <div class="quizz-section"></div>
+  <nav class="nav">
+    <a class="nav-link active js-scrollTo" href="#home">Accueil</a>
+    <a class="nav-link js-scrollTo" href="#map">Cartes</a>
+    <a class="nav-link js-scrollTo" href="#galery">Galerie photos</a>
+    <a class="nav-link js-scrollTo" href="#quizz">Quizz</a>
+  </nav>
+  <div id="home" class="home-section section">
+    <img src="src/img/logo_archinantes.png" alt="logo"/>
+    <h1>ArchiNantes</h1>
+    <p>Retrouvez les lieux que vous fréquentez au quotidien pendant la seconde guerre mondial.</p>
+  </div>
+  <div id="map" class="map-section section">
+    <!-- Map position -->
+    <div class="actu-img">
+        <a href=""><img class="history-img-small" src="src/img/history-img.jpg" alt="history-img"></a>
+    </div>
+    <!-- <div class="row history-img">
+      <div class="col-md-2">
+        <img class="actu-img-small" src="src/img/actu-img.jpg" alt="actu-img">
+      </div>
+    </div> -->
+  </div>
+  <div id="galery" class="galery-section section">
+    <p>
+      <a data-toggle="collapse" href="#placeRoyal" aria-expanded="false" aria-controls="placeRoyal">Place Royal</a>
+    </p>
+    <div class="collapse row" id="placeRoyal">
+      <div class="col-md-4">
+        <div class="card card-body">
+            <img src="src/img/22Fi003.jpg" alt="image">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-body">
+            <img src="src/img/22Fi003.jpg" alt="image">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-body">
+            <img src="src/img/22Fi003.jpg" alt="image">
+        </div>
+      </div>
+    </div>
+    <p>
+      <a data-toggle="collapse" href="#placeGraslin" aria-expanded="false" aria-controls="placeGraslin">Place Graslin</a>
+    </p>
+    <div class="collapse row" id="placeGraslin">
+      <div class="col-md-4">
+        <div class="card card-body">
+            <img src="src/img/22Fi003.jpg" alt="image">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-body">
+            <img src="src/img/22Fi003.jpg" alt="image">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-body">
+            <img src="src/img/22Fi003.jpg" alt="image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="quizz" class="quizz-section section">
+  </div>
   <footer></footer>
 </body>
 <!-- bootstrap -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflar<e.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 <!-- fancybox -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<!-- fancybox optionnals -->
-<script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+<!-- javascript -->
+<script src="src/js/smoothScroll.js"></script>
 </html>

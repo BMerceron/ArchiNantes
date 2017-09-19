@@ -1,0 +1,81 @@
+/* GLOBAL *********************************************************************/
+h1, p {
+  font-weight: 900;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+/* NAVBAR *********************************************************************/
+.nav {
+  width: 100%;
+  position: fixed;
+  background-color: #3d3a34;
+}
+.nav > a.active {
+  color: white;
+}
+.nav > a {
+  color: grey;
+}
+/* HOME SECTION ***************************************************************/
+.home-section {
+  height: 100vh;
+  /*background-image: url(../img/);*/
+  background-image: url(http://tmslesite.free.fr/Nantes/NantesCathedraleAncienOriginal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 300px;
+}
+.home-section > img {
+  height: 150px;
+  width: 180px;
+}
+.home-section > h1,p {
+  color: white;
+}
+/* MAP SECTION ****************************************************************/
+.map-section {
+  height: 100vh;
+}
+.actu-img {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/actu-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 116%;
+}
+.history-img-small {
+  height: 100px;
+  width: 150px;
+}
+.actu-img-small {
+
+}
+.history-img {
+  display: none;
+  background-image: url(../img/history-img.jpg);
+}
+/* GALERY SECTION *************************************************************/
+.galery-section {
+  height: 100vh;
+}
+.card-body > img {
+  height: 200px;
+}
+/* QUIZZ SECTION **************************************************************/
+.quizz-section {
+  height: 100vh;
+}
+/* FOOTER *********************************************************************/
+footer {
+  height: 200px;
+  background-color: #3d3a34;
+}
