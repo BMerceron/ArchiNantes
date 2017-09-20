@@ -1,15 +1,15 @@
 (function() {
   var questions = [{
-    question: '<img width="350px", src="src/img/logo_archinantes.png" />',
-    choices: [11111, 22222, 333333],
+    question: '<img width="1100px", src="src/img/fnac.jpg" />',
+    choices: ['Place de la bourse', 'Eglise Saint Nicolas', 'Quai de la fosse'],
     correctAnswer: 0
   }, {
-    question: '<img width="350px", src="src/img/logo_archinantes.png" />',
-    choices: [11111, 22222, 333333],
+    question: '<img width="1100px", src="src/img/commerce.jpg" />',
+    choices: ['Pont de pirmil', 'Place du Commerce', 'Quartier de la gare'],
     correctAnswer: 1
   }, {
-    question: '<img width="350px", src="src/img/logo_archinantes.png" />',
-    choices: [11111, 22222, 333333],
+    question: '<img width="1100px", src="src/img/boulevard.jpg" />',
+    choices: ['Place royal', 'Rue du Calvaire', 'Boulevard de Saint-Aignan'],
     correctAnswer: 2
   }];
   
