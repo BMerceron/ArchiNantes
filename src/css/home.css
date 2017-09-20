@@ -42,6 +42,13 @@ h2 {
   height: 150px;
   width: 180px;
 }
+
+#logo{
+	width:150px;
+	position:absolute;
+	margin-left:-550px;
+}
+
 .title {
   padding-top: 15px;
   background-color:#3e4c57;
