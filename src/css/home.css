@@ -106,8 +106,9 @@ h2 {
   margin-left: 820px;
 }
 .picto-royale:hover {
-
-  content: 'coucou';
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
 }
 .picto-graslin {
   position: absolute;
@@ -171,32 +172,6 @@ h2 {
   height: 40px;
   background-position-x: 100%;
 }
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
 /* GALERY SECTION *************************************************************/
 .galery-section {
   height: auto;
@@ -216,7 +191,7 @@ h2 {
   padding-top: 15%;
   height: 100vh;
   text-align: center;
-  background-image: url(../img/quizz.jpg);
+  background-image: url(../img/place_royal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
