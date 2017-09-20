@@ -31,17 +31,26 @@
   <div id="map" class="map-section section">
     <!-- Map position -->
     <div class="actu-img">
-        <a href=""><img class="history-img-small" src="src/img/history-img.jpg" alt="history-img"></a>
+        <img class="history-img-small" src="src/img/history-img.jpg" alt="history-img">
+        <div class="picto-container">
+          <a href="#" data-toggle="modal" data-target="#place_royale"><img class="picto-royale" src="src/img/map/button_map.png" alt="picto"></a>
+        </div>
+        <div class="picto-container">
+          <a href="#" data-toggle="modal" data-target="#place_graslin"><img class="picto-graslin" src="src/img/map/button_map.png" alt="picto"></a>
+        </div>
+        <div class="picto-container">
+          <a href="#" data-toggle="modal" data-target="#rue_calvaire"><img class="picto-calvaire" src="src/img/map/button_map.png" alt="picto"></a>
+        </div>
+        <div class="picto-container">
+          <a href="#" data-toggle="modal" data-target="#pont_pirmil"><img class="picto-pirmil" src="src/img/map/button_map.png" alt="picto"></a>
+        </div>
     </div>
-    <!-- <div class="row history-img">
-      <div class="col-md-2">
-        <img class="actu-img-small" src="src/img/actu-img.jpg" alt="actu-img">
+    <div class="history-img">
+      <div class="history-img">
+          <a><img class="actu-img-small" src="src/img/actu-img.jpg" alt="history-img"></a>
       </div>
-    </div> -->
+    </div>
   </div>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#place_graslin">
-  Launch demo modal
-  </button>
   <div id="galery" class="galery-section section">
     <h2>Place Royale</h2>
       <div class="row">
@@ -94,8 +103,8 @@
     <h2>Testons vos connaissances sur les lieux de Nantes de 1943 à aujourd'hui !</h2>
     <a class="btn btn-primary" href="quizz.html">Commencer le quizz !</a>
   </div>
-  <!-- Modals map -->
-  <div class="modal fade" id="place_graslin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- modal place royale -->
+  <div class="modal fade" id="place_royale" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -110,6 +119,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -120,6 +130,9 @@
               </div>
               <div class="carousel-item">
                 <img class="img-carousel" src="src/img/galery/royal/22Fi111.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/royal/22Fi109.jpg" alt="Card image cap">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -133,11 +146,212 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- modal graslin -->
+  <div class="modal fade" id="place_graslin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Photos de la Place Graslin</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="graslinIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#graslinIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#graslinIndicators" data-slide-to="1"></li>
+              <li data-target="#graslinIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-carousel" src="src/img/galery/graslin/22Fi054.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/graslin/22Fi055.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/graslin/22Fi409.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#graslinIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#graslinIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal calvaire -->
+  <div class="modal fade" id="rue_calvaire" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Photos de la rue du calvaire</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="calvaireIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#calvaireIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="1"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="2"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="3"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="4"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="5"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="6"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="7"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="8"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="9"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="10"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="11"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="12"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="13"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="14"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="15"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="16"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="17"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="18"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="19"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="20"></li>
+              <li data-target="#calvaireIndicators" data-slide-to="21"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi142.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi143.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi144.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi145.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi146.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi147.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi148.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi150.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi151.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi153.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi154.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi156.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi157.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi159.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi160.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi161.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi162.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi167.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi168.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel" src="src/img/galery/calvaire/22Fi169.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi172.jpg" alt="Card image cap">
+              </div>
+              <div class="carousel-item">
+                <img class="img-carousel portrait-img" src="src/img/galery/calvaire/22Fi188.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#calvaireIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#calvaireIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal pirmil -->
+  <div class="modal fade" id="pont_pirmil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Photos du pont de pirmil</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-carousel" src="src/img/galery/pirmil/22Fi335.jpg" alt="Card image cap">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modals -->
 </body>
 <!-- bootstrap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>

@@ -77,11 +77,45 @@ h2 {
   display: none;
   background-image: url(../img/history-img.jpg);
 }
+.picto-royale {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-top: 260px;
+  margin-left: 820px;
+}
+.picto-graslin {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 290px;
+  margin-left: 790px;
+}
+.picto-calvaire {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-top: 230px;
+  margin-left: 780px;
+}
+.picto-pirmil {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 590px;
+  margin-left: 977px;
+}
 .modal-dialog {
   max-width: 860px;
 }
 .img-carousel {
-  max-height: 560px;
+    max-height: 560px;
+    width: 100%;
+}
+.portrait-img {
+  margin-left: 100px;
+  width: auto;
+  margin-left: 230px;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon  {
     background-size: 30px 30px;
@@ -95,6 +129,7 @@ h2 {
 .carousel-control-next-icon {
   width: 40px;
   height: 40px;
+  background-position-x: 100%;
 }
 /* GALERY SECTION *************************************************************/
 .galery-section {
