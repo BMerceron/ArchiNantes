@@ -37,6 +37,8 @@ h2 {
   background-size: cover;
   background-position: center;
   padding-top: 35%;
+  border-bottom:20px solid white;
+  box-shadow: 10px 10px 0px black;
 }
 .home-section > img {
   height: 150px;
@@ -89,12 +91,12 @@ h2 {
 }
 .history-img {
   display: none;
-  display: none;
   height: 100%;
   width: 100%;
-  background-image: url(../img/history-img.jpg);
+  background-image: url(../img/history-img.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 0% 90%;
 }
 .picto-royale {
   position: absolute;
@@ -103,12 +105,21 @@ h2 {
   margin-top: 260px;
   margin-left: 820px;
 }
+.picto-royale:hover {
+
+  content: 'coucou';
+}
 .picto-graslin {
   position: absolute;
   width: 30px;
   height: 30px;
   margin-top: 290px;
   margin-left: 790px;
+}
+.picto-graslin:hover {
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
 }
 .picto-calvaire {
   position: absolute;
@@ -117,12 +128,22 @@ h2 {
   margin-top: 230px;
   margin-left: 780px;
 }
+.picto-calvaire:hover {
+  width: 60px;
+  height: 60px;
+  transition: 0.5s;
+}
 .picto-pirmil {
   position: absolute;
   width: 20px;
   height: 20px;
   margin-top: 590px;
   margin-left: 977px;
+}
+.picto-pirmil:hover {
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
 }
 .modal-dialog {
   max-width: 860px;
@@ -149,6 +170,32 @@ h2 {
   width: 40px;
   height: 40px;
   background-position-x: 100%;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 /* GALERY SECTION *************************************************************/
 .galery-section {
