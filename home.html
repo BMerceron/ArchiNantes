@@ -30,8 +30,8 @@
   </div>
   <div id="map" class="map-section section">
     <!-- Map position -->
-    <div class="actu-img">
-        <img class="history-img-small" src="src/img/history-img.jpg" alt="history-img">
+    <div class="actu-img map-active">
+        <img id="js-map-history" class="history-img-small" src="src/img/history-img.jpg" alt="history-img">
         <div class="picto-container">
           <a href="#" data-toggle="modal" data-target="#place_royale"><img class="picto-royale" src="src/img/map/button_map.png" alt="picto"></a>
         </div>
@@ -46,9 +46,7 @@
         </div>
     </div>
     <div class="history-img">
-      <div class="history-img">
-          <a><img class="actu-img-small" src="src/img/actu-img.jpg" alt="history-img"></a>
-      </div>
+      <img id="js-map-actu" class="actu-img-small" src="src/img/actu-img.jpg" alt="actu-img">
     </div>
   </div>
   <div id="galery" class="galery-section section">
@@ -359,6 +357,7 @@
 <!-- fancybox -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
 <!-- javascript -->
+<script src="src/js/map.js"></script>
 <script src="src/js/smoothScroll.js"></script>
 <script src="src/js/modal.js"></script>
 </html>

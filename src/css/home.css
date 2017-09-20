@@ -56,7 +56,11 @@ h2 {
 .map-section {
   height: 100vh;
 }
+.map-active {
+  display: block!important;
+}
 .actu-img {
+  display: none;
   height: 100%;
   width: 100%;
   background-image: url(../img/actu-img.jpg);
@@ -71,11 +75,19 @@ h2 {
   width: 260px;
 }
 .actu-img-small {
-
+  margin-left: 25px;
+  margin-top: 25px;
+  height: 200px;
+  width: 260px;
 }
 .history-img {
   display: none;
+  display: none;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/history-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .picto-royale {
   position: absolute;
