@@ -212,7 +212,7 @@ h2 {
 }
 
 #all_logo{
-	margin-left: 30%;
+	margin-left: 15%;
 	position:absolute;
 }
 
@@ -233,6 +233,21 @@ h2 {
 
 #logo_metropole{
 	width:250px;
+	padding: 10px 20px;
+}
+
+#logo_medialab{
+	width:150px;
+	padding: 10px 20px;
+}
+
+#logo_open{
+	width:150px;
+	padding: 10px 20px;
+}
+
+#logo_commons{
+	width:150px;
 	padding: 10px 20px;
 }
 
