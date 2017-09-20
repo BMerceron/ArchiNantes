@@ -169,3 +169,41 @@ h2 {
 .quizz-section > a {
   margin-top: 100px;
 }
+
+/* Footer **************************************************************/
+
+#foot{
+	height:200px;
+	background-color: #e4e4e4;
+}
+
+#all_logo{
+	margin-left: 30%;
+	position:absolute;
+}
+
+#logo_archive{
+	width:150px;
+	padding: 50px 20px;
+}
+
+#logo_ynov{
+	width:150px;
+	padding: 10px 20px;
+}
+
+#logo_imie{
+	width:160px;
+	padding: 10px 20px;
+}
+
+#logo_metropole{
+	width:250px;
+	padding: 10px 20px;
+}
+
+#participant{
+	position:absolute;
+	margin-left:92%;
+	margin-top:1%;
+}
