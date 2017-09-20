@@ -77,6 +77,25 @@ h2 {
   display: none;
   background-image: url(../img/history-img.jpg);
 }
+.modal-dialog {
+  max-width: 860px;
+}
+.img-carousel {
+  max-height: 560px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon  {
+    background-size: 30px 30px;
+    background-color: black;
+    opacity: 0.7;
+}
+.carousel-control-prev-icon  {
+  width: 40px;
+  height: 40px;
+}
+.carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+}
 /* GALERY SECTION *************************************************************/
 .galery-section {
   height: auto;
