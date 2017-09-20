@@ -1,6 +1,7 @@
 /* GLOBAL *********************************************************************/
 body {
   overflow-x: hidden;
+  font-family: Century Gothic;
 }
 h1, p {
   font-weight: 900;
