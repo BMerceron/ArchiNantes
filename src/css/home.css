@@ -199,6 +199,10 @@ h2 {
 .quizz-section > a {
   margin-top: 100px;
 }
+.quizz-section > h2 {
+  color: white;
+  
+}
 
 /* Footer **************************************************************/
 
