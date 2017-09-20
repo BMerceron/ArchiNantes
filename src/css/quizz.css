@@ -1,6 +1,6 @@
 body {
     font-family: Orator Std;
-	background: #3d3a34;
+	background: #e4e4e4;
 }
 
 h1 {
@@ -17,9 +17,9 @@ img{
 	padding: 20px 0;
 }
 
-a:link { 
-	text-decoration:none; 
-} 
+a:link {
+	text-decoration:none;
+}
 
 .back {
 	text-align: center;
