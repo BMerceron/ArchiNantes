@@ -1,32 +1,32 @@
 (function() {
   var questions = [{
     question: '<img width="1100px", src="src/img/fnac.jpg" />',
-    choices: ['Place de la bourse', 'Eglise Saint Nicolas', 'Quai de la fosse'],
+    choices: ['Place de la Bourse', 'Eglise Saint Nicolas', 'Quai de la Fosse'],
     correctAnswer: 0
   }, {
     question: '<img width="1100px", src="src/img/commerce.jpg" />',
-    choices: ['Pont de pirmil', 'Place du Commerce', 'Quartier de la gare'],
+    choices: ['Pont de pirmil', 'Place du Commerce', 'Quartier de la Gare'],
     correctAnswer: 1
   }, {
     question: '<img width="1100px", src="src/img/boulevard.jpg" />',
-    choices: ['Place royal', 'Rue du Calvaire', 'Boulevard de Saint-Aignan'],
+    choices: ['Place Royale', 'Rue du Calvaire', 'Boulevard de Saint-Aignan'],
     correctAnswer: 2
   }];
-  
-  var questionCounter = 0; 
-  var selections = []; 
-  var quiz = $('#quiz'); 
-  
+
+  var questionCounter = 0;
+  var selections = [];
+  var quiz = $('#quiz');
+
   displayNext();
-  
+
   $('#next').on('click', function (e) {
     e.preventDefault();
-    
-    if(quiz.is(':animated')) {        
+
+    if(quiz.is(':animated')) {
       return false;
     }
     choose();
-    
+
     if (isNaN(selections[questionCounter])) {
       alert('Faites un choix !');
     } else {
@@ -34,10 +34,10 @@
       displayNext();
     }
   });
-  
+
   $('#prev').on('click', function (e) {
     e.preventDefault();
-    
+
     if(quiz.is(':animated')) {
       return false;
     }
@@ -45,10 +45,10 @@
     questionCounter--;
     displayNext();
   });
-  
+
   $('#start').on('click', function (e) {
     e.preventDefault();
-    
+
     if(quiz.is(':animated')) {
       return false;
     }
@@ -57,31 +57,31 @@
     displayNext();
     $('#start').hide();
   });
-  
+
   $('.button').on('mouseenter', function () {
     $(this).addClass('active');
   });
   $('.button').on('mouseleave', function () {
     $(this).removeClass('active');
   });
-  
+
   function createQuestionElement(index) {
     var qElement = $('<div>', {
       id: 'question'
     });
-    
+
     var header = $('<h2>Image ' + (index + 1) + ' :</h2>');
     qElement.append(header);
-    
+
     var question = $('<p>').append(questions[index].question);
     qElement.append(question);
-    
+
     var radioButtons = createRadios(index);
     qElement.append(radioButtons);
-    
+
     return qElement;
   }
-  
+
   function createRadios(index) {
     var radioList = $('<ul>');
     var item;
@@ -95,26 +95,26 @@
     }
     return radioList;
   }
-  
+
   function choose() {
     selections[questionCounter] = +$('input[name="answer"]:checked').val();
   }
-  
+
   function displayNext() {
     quiz.fadeOut(function() {
       $('#question').remove();
-      
+
       if(questionCounter < questions.length){
         var nextQuestion = createQuestionElement(questionCounter);
         quiz.append(nextQuestion).fadeIn();
         if (!(isNaN(selections[questionCounter]))) {
           $('input[value='+selections[questionCounter]+']').prop('checked', true);
         }
-        
+
         if(questionCounter === 1){
           $('#prev').show();
         } else if(questionCounter === 0){
-          
+
           $('#prev').hide();
           $('#next').show();
         }
@@ -127,17 +127,17 @@
       }
     });
   }
-  
+
   function displayScore() {
     var score = $('<p>',{id: 'question'});
-    
+
     var numCorrect = 0;
     for (var i = 0; i < selections.length; i++) {
       if (selections[i] === questions[i].correctAnswer) {
         numCorrect++;
       }
     }
-    
+
     score.append('<center>Vous avez ' + numCorrect + ' reponse bonnes sur  ' +
                  questions.length + ' questions!!!</center>');
     return score;
